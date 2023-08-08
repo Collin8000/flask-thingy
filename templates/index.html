@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza Palace</title>
+    <link rel="stylesheet" href="./static/dist/output.css">
+    <style>
+      .front {
+          transform: perspective(1000px) rotateY(0deg);
+          transition: transform 0.5s ease-in-out;
+      }
+
+      .back {
+          transform: perspective(1000px) rotateY(-180deg);
+          transition: transform 0.5s ease-in-out;
+          display: none;
+      }
+
+      .bg-white:hover .front {
+          transform: perspective(1000px) rotateY(180deg);
+      }
+
+      .bg-white:hover .back {
+          transform: perspective(1000px) rotateY(0deg);
+          display: block;
+      }
+  </style>
+</head>
+<body class="bg-red-500">
+    <nav class="shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a class="text-gray-800 font-bold text-xl hover:text-gray-700" href="#">Pizza Palace</a>
+                </div>
+                <div class="flex">
+                    <a class="text-gray-800 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium" href="#">Home</a>
+                    <a class="text-gray-800 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium" href="/contact2">Sign up</a>
+                    <a class="text-gray-800 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium" href="/contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto py-8">
+        <h2 class="text-2xl font-bold text-white mb-4">Our Pizzas</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+            <div class="bg-white rounded-lg shadow-lg p-4 card">
+                <h2 class="text-lg font-bold mb-2">Margherita</h2>
+                <p class="text-gray-700">Tomato sauce, mozzarella, and fresh basil.</p>
+                <div class="back">
+                    <div>
+                        <h3>John Doe says:</h3>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p>"The Margherita pizza is simply the best. The fresh basil and mozzarella are a perfect combination. I highly recommend it!"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 card">
+                <h2 class="text-lg font-bold mb-2">Pepperoni</h2>
+                <p class="text-gray-700">Tomato sauce, mozzarella, and pepperoni.</p>
+                <div class="back">
+                    <div>
+                        <h3>Jane Doe says:</h3>
+                        <p>⭐⭐⭐⭐</p>
+                        <p>"The Pepperoni pizza is delicious. The pepperoni is spicy and flavorful, and the crust is perfectly crispy."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 card">
+                <h2 class="text-lg font-bold mb-2">Hawaiian</h2>
+                <p class="text-gray-700">Tomato sauce, mozzarella, ham, and pineapple.</p>
+                <div class="back">
+                    <div>
+                        <h3>Bob Smith says:</h3>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p>"I love the Hawaiian pizza. The combination of ham and pineapple is surprisingly good. It's my favorite pizza at Pizza Palace."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 card">
+                <h2 class="text-lg font-bold mb-2">Meat Lovers</h2>
+                <p class="text-gray-700">Tomato sauce, mozzarella, pepperoni, sausage, bacon, and ham.</p>
+                <div class="back">
+                    <div>
+                        <h3>Alice Johnson says:</h3>
+                        <p>⭐⭐⭐⭐</p>
+                        <p>"The Meat Lovers pizza is a meaty delight. It's loaded with pepperoni, sausage, bacon, and ham. It's a must-try for meat lovers."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 card">
+                <h2 class="text-lg font-bold mb-2">Veggie</h2>
+                <p class="text-gray-700">Tomato sauce, mozzarella, mushrooms, onions, peppers, and olives.</p>
+                <div class="back">
+                    <div>
+                        <h3>Mark Davis says:</h3>
+                        <p>⭐⭐⭐⭐⭐</p>
+                        <p>"The Veggie pizza is amazing. It's loaded with fresh vegetables and the crust is perfectly baked. It's a great option for vegetarians."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4 card">
+                <h2 class="text-lg font-bold mb-2">BBQ Chicken</h2>
+                <p class="text-gray-700">BBQ sauce, mozzarella, chicken, and red onions.</p>
+                <div class="back">
+                    <div>
+                        <h3>Sarah Lee says:</h3>
+                        <p>⭐⭐⭐⭐</p>
+                        <p>"The BBQ Chicken pizza is really good. The BBQ sauce is tangy and the chicken is tender. I would definitely order it again."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8">
+            <h2 class="text-2xl font-bold text-white mb-4">Pizza Costs</h2>
+            <ul class="list-disc list-inside text-white">
+                <li>Margherita: $10.99</li>
+                <li>Pepperoni: $12.99</li>
+                <li>Hawaiian: $14.99</li>
+                <li>Meat Lovers: $16.99</li>
+                <li>Veggie: $14.99</li>
+                <li>BBQ Chicken: $15.99</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
